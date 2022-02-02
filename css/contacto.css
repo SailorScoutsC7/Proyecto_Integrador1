@@ -1,0 +1,98 @@
+.valores {
+  list-style: circle;
+}
+
+.body {
+  background-image: url("../html/assets/DAMOR_sencillo.png");
+  backdrop-filter: opacity(50%);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  object-position: center;
+  width: 800px;
+  margin: 20px;
+}
+
+.nav {
+  box-shadow: 0 2px 4px 0 rgb(125, 78, 36);
+  min-height: 10px;
+}
+
+#logo {
+  object-position: left;
+  width: 60px;
+  height: 40px;
+}
+
+img {
+  border-radius: 45%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+form {
+  padding: 10px;
+  max-width: 800px;
+  background-color: rgba(219, 217, 214, .3);
+  margin: 0 auto;
+  display: block;
+  border: none;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  color: #525c66;
+  font-size: 1em;
+  resize: none;
+  border-bottom: 2px solid #F6A015;
+}
+
+form button {
+  display: block;
+  background-color: #0095eb;
+  padding: 10px 45px 10px 45px;
+  border: 0;
+  font-size: 1em;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+form button.hover {
+  background-color: #046193;
+}
+textarea {
+  resize: none;
+}
+
+
+.nav-link  {
+  color: rgb(255, 255, 255);
+  }
+.nav-link:hover{
+  color: rgb(246,160,28)
+}
+  img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.form-header{
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 90px;
+  color: rgb(246,160,28)
+  
+}
+
+span {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 90px;
+  color: rgb(0, 0, 0)
+}
