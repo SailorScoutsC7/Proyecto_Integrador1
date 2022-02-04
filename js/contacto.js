@@ -1,4 +1,4 @@
-
+//l
 /*var registros=[];
   localStorage.setItem("Formularios", JSON.stringify(registros));
 */
