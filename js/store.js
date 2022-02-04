@@ -4,7 +4,7 @@ $('#myCarousel').carousel({
   $('#carousel-thumbs').carousel({
     interval: false
   });
-  
+  //agrego cambio
   // handles the carousel thumbnails
   // https://stackoverflow.com/questions/25752187/bootstrap-carousel-with-thumbnails-multiple-carousel
   $('[id^=carousel-selector-]').click(function() {
@@ -47,6 +47,7 @@ $('#myCarousel').carousel({
     preventDefaultEvents: false,
     threshold: 75
   });
+  //cambio
   /*
   $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();
