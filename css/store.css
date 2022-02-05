@@ -83,3 +83,35 @@ background-image: url(fondo1.jpg )
         background-image: url(fondo3.jpg )
         
           }
+
+
+          
+          #conteiner{
+              font-family: "Berkshire Swash", cursive;
+              font-weight: bold;
+              text-decoration: underline;
+              text-decoration-style: dashed;
+              text-align: center;
+              font-size: 35px;
+              color: rgb(246,160,28);
+              
+              text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+              
+          }
+
+
+          .card {
+            border: 5px solid ;
+border-radius: 40px;
+}
+
+
+.card-img-top
+{
+border: 0px solid ;
+border-radius: 40px 40px 0px 0px;
+}
+
+
+
+
