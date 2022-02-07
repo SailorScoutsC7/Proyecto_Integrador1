@@ -2,15 +2,28 @@
   list-style: circle;
 }
 
-.body {
-  background-image: url("../html/assets/DAMOR_sencillo.png");
-  backdrop-filter: opacity(50%);
-  -webkit-background-size: cover;
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: url(../html/assets/DAMOR_c_fondo.png);
   background-size: cover;
   background-attachment: fixed;
-  object-position: center;
-  width: 800px;
-  margin: 20px;
+
+}
+
+
+/* formato del cuadro del formulario*/
+
+
+@media (min-width:768px)
+{
+.body {
+    margin: auto;
+    width: 500px;
+    margin-top: 80px;
+    border-radius: 3%;
+    background-color: rgba(201, 201, 201, .7);
+}
 }
 
 .nav {
@@ -32,7 +45,6 @@ img {
 form {
   padding: 10px;
   max-width: 800px;
-  background-color: rgba(219, 217, 214, .3);
   margin: 0 auto;
   display: block;
   border: none;
@@ -90,9 +102,17 @@ textarea {
   
 }
 
-span {
+h1{
+  text-align: center;
+  color: #F6A015;
+  font-size: 40px;
+
+}
+
+/* span {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   font-size: 90px;
   color: rgb(0, 0, 0)
 }
+*/

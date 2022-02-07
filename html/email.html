@@ -8,53 +8,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="shortcut icon" href="../html/assets/DAMOR_sencillo.png">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../css/contacto.css">
         
 </head>
 
 <body>
-    <!--prueba 4 nueva rama-->
+  <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #704B1C;">
+      <a class="navbar-brand" href="#"></a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Navbar.html">Conócenos <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../html/Developers.html">Desarrolladores</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link"href="https://www.animalgourmet.com/2018/02/26/damor-panaderia-guadalajara/" target="blank">Noticias</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="store.html">Tienda</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="https://www.faeeac.org/" target="blank">FAEE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="email.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Iniciar Sesión</a>
+            </li>
 
-        <!-- NavBar up -->
+            <RIGHT><img src="../html/assets/DAMOR_sencillo.png" width="..." height="50"></RIGHT>
 
-        <nav class="navbar navbar-expand-lg sticky-top " style="background-color: #704B1C;">
-            <a class="navbar-brand" href="#"></a>
-
-            <LEFT><img src="../html/assets/DAMOR_sencillo.png" width="..." height="50"></LEFT>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="../html/Navbar.html">About us <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../html/Developers.html">Developers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"href="https://www.animalgourmet.com/2018/02/26/damor-panaderia-guadalajara/" target="blank">News</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="store.html">Store</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.faeeac.org/" target="blank">FAEE</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="email.html">Contact us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html">Log in</a>
-                  </li>
-              </ul>
-            </div>
-          </nav>
+        </ul>
+      </div>
+    </nav>
+  </body>
 
 
 
-</body>
 
 </html>
 <html lang="en">
@@ -75,6 +73,8 @@
 <body>
 
     <center><div class="body">
+
+      
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -89,13 +89,16 @@
     <form onsubmit='return validarForm()'>
         
       <div class="form-header">
-        <label for="exampleFormControlInput1">C<span>ontacto</span></label>
+
+        <h1>Contacto</h1>
+
+                <!-- <label for="exampleFormControlInput1">C<span>ontacto</span></label> -->
         <h1 class="Form-control"></h1>
     </div>
 
         <div class="form-group">
             <label for="exampleFormControlInput1">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
         </div>
        
         <div class="form-group">
@@ -104,15 +107,15 @@
         </div>
        
         <div class="form-group">
-            <label for="exampleFormControlInput2">Telefono</label>
-            <input type="phone" class="form-control" id="phone" placeholder="Telefono">
+            <label for="exampleFormControlInput2">Teléfono</label>
+            <input type="phone" class="form-control" id="phone" placeholder="Teléfono">
         </div>
        
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Mensaje</label>
             <textarea class="form-control" id="Mensaje" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" onclick="agregar()">Submit</button>
+        <button type="submit" class="btn btn-primary" onclick="agregar()">Enviar</button>
         <!-- <input type="button" value="Send Email" onclick="sendEmail()" /> -->
     </form>
     <script src="../js/contacto.js"></script>
