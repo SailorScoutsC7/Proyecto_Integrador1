@@ -32,7 +32,7 @@ body {
   height: 40px;
 }
 
-img {
+img { /* se cambio a img1 por que cambiaba todas las imagenes */
   border-radius: 45%;
 }
 
