@@ -14,13 +14,14 @@ temporada = JSON.parse(localStorage.getItem("temporada"));
 producto_covid = JSON.parse(localStorage.getItem("producto_covid"));
 
 class Producto {
-    constructor(ID,nombre,precio,cantidad,tipo,descripcion) {
+    constructor(ID,nombre,precio,cantidad,tipo,descripcion,img) {
         this.ID= ID;
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad= cantidad;
         this.tipo= tipo;
-        this.descripcion= descripcion
+        this.descripcion= descripcion;
+        this.img= img;
     }
 }
 function agregarProducto(formulario) {
@@ -30,10 +31,11 @@ function agregarProducto(formulario) {
     var cantidad = document.getElementById('cantidad').value;
     var tipo = document.getElementById('tipo').value;
     var descripcion = document.getElementById('Descripcion').value;
+    var img = document.getElementById('imagen').value;
+    img = img.replace(/^.*\\/, "");
     //validarForm(nombre, email, telefono, mensaje);
-    var producto = new Producto(ID,nombre,precio,cantidad,tipo,descripcion);
+    var producto = new Producto(ID,nombre,precio,cantidad,tipo,descripcion,img);
     console.log(tipo);
-    addItem(producto);
     tipoProducto(tipo,producto);
     ID="";
     nombre="";
@@ -41,7 +43,8 @@ function agregarProducto(formulario) {
     cantidad="";
     tipo="";
     descripcion="";
-}
+    img="";
+}//hola
 function tipoProducto(tipo,producto){
    switch(tipo){
    case "regular":
@@ -58,23 +61,22 @@ function tipoProducto(tipo,producto){
     break;
    }
 }
-
-function addItem(obj_regular){
-    const itemHTML = '<div class="card" style="width: 18rem;">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+obj_regular.nombre+'</h5>\n' +
-        '        <h5 class="card-title">'+obj_regular.precio+'</h5>\n' +
-        '        <p class="card-text">'+obj_regular.descripcion+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-    const itemsContainer = document.getElementById("list-items");
+function añadirProducto(subir_producto){
+    const itemHTML = 
+        '<div class="col-md-4">>\n'                                         +
+        '<div class="card" style="width: 18rem;">\n'                        +
+        '<img src="../html/assets/Store/Pan/'+subir_producto.img+'" class="card-img-top" alt="...">\n'                        +
+        '    <div class="card-body">\n'                                     +
+        '        <h5 class="card-title">'+subir_producto.nombre+'</h5>\n'   +
+        '        <h6 class="card-subtitle mb-2 text-muted">'+subir_producto.precio+'</h6>\n'   +
+        '        <p class="card-text">'+subir_producto.descripcion+'</p>\n' +
+        '    </div>\n'                                                      +
+        '</div>\n'                                                          +
+        '</div>'                                                             ;
+    const itemsContainer = document.getElementById(subir_producto.tipo);
     itemsContainer.innerHTML += itemHTML;
 }
-
 for (let index = 0; index < regular.length; index++) {
-    var obj_regular = regular[index];
-   addItem(obj_regular);
+    var subir_producto = regular[index];
+   añadirProducto(subir_producto);
 }
-
