@@ -26,11 +26,6 @@ body {
 }
 }
 
-.nav {
-  box-shadow: 0 2px 4px 0 rgb(125, 78, 36);
-  min-height: 10px;
-}
-
 #logo {
   object-position: left;
   width: 60px;
@@ -81,12 +76,7 @@ textarea {
 }
 
 
-.nav-link  {
-  color: rgb(255, 255, 255);
-  }
-.nav-link:hover{
-  color: rgb(246,160,28)
-}
+
   img {
   display: block;
   margin: 0 auto;
@@ -109,10 +99,3 @@ h1{
 
 }
 
-/* span {
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  font-size: 90px;
-  color: rgb(0, 0, 0)
-}
-*/
